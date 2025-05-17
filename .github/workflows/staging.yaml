@@ -21,10 +21,9 @@ jobs:
           ASSET_PREFIX: '/prod/myapp'
           NEXT_PUBLIC_BASE_URL: 'https://staging.hitomoshi.org/prod/myapp/'
 
-      - name: ssh key generate
+      - name: debug base64 head
         run: |
-          printf "%s" "${{ secrets.SSH_PRIVATE_KEY_B64 }}" | base64 -d > key
-          chmod 600 key
+          echo "${{ secrets.SSH_PRIVATE_KEY_B64 }}" | head -c 20
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
 
