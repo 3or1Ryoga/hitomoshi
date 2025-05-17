@@ -22,7 +22,9 @@ jobs:
           NEXT_PUBLIC_BASE_URL: 'https://staging.hitomoshi.org/prod/myapp/'
 
       - name: ssh key generate
-        run: echo "$SSH_PRIVATE_KEY" > key && chmod 600 key
+        run: |
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > key
+          chmod 600 key
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
 
