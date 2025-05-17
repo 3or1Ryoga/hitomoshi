@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '20.x'
 
-      - run: npm install && npm run build
+      - run: npm install --legacy-peer-deps && npm run build
         env:
           ASSET_PREFIX: '/prod/myapp'
           NEXT_PUBLIC_BASE_URL: 'https://staging.hitomoshi.org/prod/myapp/'
