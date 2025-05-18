@@ -20,6 +20,9 @@ const fontNotoSansJP = Noto_Sans_JP({
 export const metadata = {
   title: "HITOMOSHI - ヒトのモシ のために ヒをトモシ 社会を幸せにする",
   description: "HITOMOSHIは関西学院大学発のスタートアップ。学生と企業の架け橋となり、関わった人の心を動かす企業です。",
+  verification: {
+    google: "5zaUlHBLK7GixqQHH7znXqdM4KdtIPLn3oFiP2lgCQI",
+  },
   keywords: [
     "学生マッチング",
     "新卒採用支援",
