@@ -91,7 +91,7 @@ export default function Home() {
                   <span className="text-[#FF4B3E] text-3xl font-bold">シ</span>
                 </p>
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                  学生と企業の架け橋となり、関わった人の心を動かす企業
+                  一歩踏み出して成長する人を応援し、関わった人の心を動かす企業
                 </p>
               </div>
 
