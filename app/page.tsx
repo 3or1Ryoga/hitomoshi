@@ -294,9 +294,15 @@ export default function Home() {
               <CardHeader>
                 <CardTitle className="text-[#FF4B3E]">酒井涼雅</CardTitle>
                 <div className="relative w-full h-40 sm:h-60 md:h-80 mb-4 overflow-hidden rounded-xl">
-                  <Image
+                  {/* <Image
                     src="/ryoga-media.jpg"
                     alt="酒井涼雅"
+                    fill
+                    className="object-cover"
+                  /> */}
+                  <Image
+                    src="/woman.png"
+                    alt="うーめん"
                     fill
                     className="object-cover"
                   />
@@ -537,11 +543,13 @@ export default function Home() {
             <p className="text-center text-sm leading-loose md:text-left">
               &copy; {new Date().getFullYear()} HITOMOSHI All rights reserved.
             </p>
+            
           </div>
           <div className="flex flex-col space-y-2 text-center text-sm md:text-right">
             <p>〒669-1337兵庫県三田市学園4丁目2番</p>
             <p>代表: 酒井涼雅</p>
             <p>Tel: 090-6665-6240 | Email: ryoga3or1@gmail.com</p>
+            
           </div>
         </div>
       </footer>
